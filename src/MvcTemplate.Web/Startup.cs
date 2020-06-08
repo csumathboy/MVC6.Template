@@ -46,7 +46,7 @@ namespace MvcTemplate.Web
             RegisterSession(services);
             RegisterMvc(services);
         }
-
+        
         public virtual void RegisterCurrentDependencyResolver(IServiceCollection services)
         {
             services.AddTransient<DbContext, Context>();
